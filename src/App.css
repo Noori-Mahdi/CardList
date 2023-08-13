@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(240, 78%, 98%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  padding-top: 40px;
+  height: 100%;
+}
+
+.main .topImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main .bottomImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main .cardList {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}
+
+.main h2 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: hsl(232, 13%, 33%);
+}
+
+.main .buttonBx {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  text-transform: capitalize;
+  gap: 10px;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+
+.main .buttonBx span{
+  color: hsl(234, 14%, 74%);
+}
+
+.main .buttonBx .button {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  width: 50px;
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  height: 28px;
+  border-radius: 100px;
+}
+
+.main .buttonBx .button div {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.main .buttonBx .button .active {
+  margin-left: auto;
+}
+
+.main .cardList .card {
+  display: inline-block;
+  border-radius: 8px;
+  width: 300px;
+  padding: 50px 30px;
+  transition: .5s;
+}
+
+.main .cardList h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: hsl(233, 13%, 49%);
+}
+
+.main .cardList .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.main .cardList .price span:nth-child(1) {
+  font-size: 40px;
+  color: hsl(232, 13%, 33%);
+}
+
+.main .cardList .price span:nth-child(2) {
+  font-weight: 700;
+  font-size: 60px;
+  color: hsl(232, 13%, 33%);
+}
+
+.main .cardList ul {
+  padding: 0;
+  margin: 30px 0;
+}
+
+.main .cardList .card ul span {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid gray;
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(233, 13%, 49%);
+}
+
+
+.main .cardList ul span:nth-child(1) {
+  border-top: 1px solid gray;
+}
+
+.main .cardList .card button {
+  background-color: rgb(11, 56, 122);
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.main .cardList .active {
+  display: inline-block;
+  color: hsl(240, 78%, 98%);
+  background-color: rgb(11, 56, 122);
+  padding: 70px 30px;
+  width: 300px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.main .cardList .active button {
+  color: rgb(11, 56, 122);
+  background-color: #fff;
+  width: 100%;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+}
+
+.main .cardList .active ul span{
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(240, 78%, 98%);
+}
+
+.main .cardList .active ul span:nth-child(1){
+  border-top: 1px solid hsl(234, 14%, 74%);
+}
+
+.main .cardList .active h4{
+  color: hsl(240, 78%, 98%);
+}
